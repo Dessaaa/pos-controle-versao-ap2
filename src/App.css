@@ -1,0 +1,265 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Jura", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #FFF;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  padding: 20px;
+  display: flex;
+  width: calc(100vw - 40px);
+  background-color: #000;
+}
+
+header nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+header .inicio {
+  display: inline-block;
+}
+
+header .inicio a {
+  display: block;
+  text-decoration: none;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+header .menu {
+  display: inline-block;
+}
+
+header .menu .linha {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+header .menu nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li {
+  display: inline-flex;
+  border-right: #FFF 1px solid;
+  padding: 10px 20px 10px 0px;
+}
+header nav ul li:last-child {
+  border: 0;
+  padding-right: 0;
+}
+
+header nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #FFF;
+  font-weight: bold;
+  text-underline-offset: 8px;
+  transition: all .3s ease;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+section {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 120px 0 40px 0;
+}
+
+section.produtos .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  gap: 20px;
+}
+
+section.produtos a {
+  text-decoration: none;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10px;
+}
+
+section.produtos a picture {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 324px;
+}
+
+section.produtos a picture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all .3s ease;
+}
+
+section.produtos a .infos {
+  display: block;
+  width: calc(100% - 40px);
+  height: auto;
+  padding: 20px;
+  background-color: #000;
+  color: #FFF;
+  text-align: center;
+}
+
+section.produtos a:hover picture img {
+  transform: scale(1.1);
+}
+
+section .produto-detalhe .container {
+  display: block;
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+section.produto-detalhe .produto {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10px;
+}
+
+section.produto-detalhe .produto picture {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 465px;
+}
+
+section.produto-detalhe .produto picture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all .3s ease;
+}
+
+section.produto-detalhe .produto .infos {
+  display: block;
+  width: calc(100% - 40px);
+  height: auto;
+  padding: 20px;
+  background-color: #000;
+  color: #FFF;
+  text-align: center;
+}
+
+section.produto-detalhe .produto .infos .valor {
+  font-weight: bold;
+  margin-top: 20px;
+}
+section.produto-detalhe .produto .infos .descricao {
+  margin-top: 20px;
+  line-height: 150%;
+}
+
+section.contato {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+section.contato picture {
+  display: block;
+  width: 45vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+section.contato picture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section.contato .container {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+section.contato .formulario {
+  display: block;
+  width: 100%;
+  max-width: 530px;
+  border-radius: 10px;
+  background-color: #F1F1F1;
+  padding: 40px;
+}
+
+section.contato .formulario h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+section.contato .formulario label {
+  display: block;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+section.contato .formulario input {
+  display: block;
+  width: calc(100% - 40px);
+  background-color: #fff;
+  border: 0;
+  font-size: 16px;
+  height: auto;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+}
+
+section.contato .formulario button {
+  background-color: #393839;
+  color: #FFF;
+  width: 100%;
+  display: block;
+  padding: 10px 20px;
+}
